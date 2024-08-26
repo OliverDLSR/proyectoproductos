@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)x!79&a@9v(tnn(stn+4!+oz@(w7pur-p=(vx4c6m8okxc4ek*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -75,10 +75,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'proyectoproductos.wsgi.application'
 
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = [
-    "https://example.com",
-    "https://sub.example.com",
-]
+
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -126,6 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+#
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
