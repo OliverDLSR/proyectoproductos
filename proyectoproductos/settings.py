@@ -32,7 +32,6 @@ ALLOWED_HOSTS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
-    'https://proyectoproductos-fkiw-el97ebudv-oliverdlsrs-projects.vercel.app/,
     
 ]
 
