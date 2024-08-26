@@ -23,9 +23,31 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)x!79&a@9v(tnn(stn+4!+oz@(w7pur-p=(vx4c6m8okxc4ek*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+]
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8000',
+    'https://proyectoproductos-fkiw-el97ebudv-oliverdlsrs-projects.vercel.app/,
+    
+]
+
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS',
+]
+
+CORS_ALLOW_HEADERS = [
+    'content-type',
+]
 
 
 # Application definition
